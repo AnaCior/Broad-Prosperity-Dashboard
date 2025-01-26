@@ -303,7 +303,7 @@ Themes = {
         Nature and forest areas, Distance to public green areas, Greenhouse gas emissions per capita, 
         Quality of inland bathing water, Quality of coastal bathing water
     """,
-    "Air Quality": """
+    "Air quality": """
         **Welcome to the Air Quality theme**
         - In this theme, the following indicators are included: Emissions of particulate matter to air, Greenhouse gas emissions per capita
     """,
