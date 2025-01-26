@@ -501,7 +501,7 @@ file_options = {
         },
         'title': 'Volunteer work',
     },
-    'Air Quality': {
+    'Air quality': {
         'path': 'Theme_Air_Quality.geojson',
         'year_columns': {
             '2019': 'Year2019',
