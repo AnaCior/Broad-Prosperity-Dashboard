@@ -17,13 +17,13 @@ file_options = {
         },
         'title': 'Average debt per household',
     },
-    'Built-up area': {
+    'Built up area': {
         'path': 'BuiltUpArea.geojson',
         'year_columns': {
             '2015': 'Year2015',
             '2017': 'Year2017',
         },
-        'title': 'Built-up area',
+        'title': 'Built up area',
     },
     'Contact with family, friends or neighbors': {
         'path': 'ContactWithFamilyEtc.geojson',
@@ -82,7 +82,7 @@ file_options = {
         },
         'title': 'Distance to public green areas',
     },
-    'Distance to public transport': {
+    'Distance to public transportation': {
         'path': 'DistanceToPublicTransportation.geojson',
         'year_columns': {
             '2017': 'Year2017',
@@ -93,7 +93,7 @@ file_options = {
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Distance to public transport',
+        'title': 'Distance to public transportation',
     },
     'Distance to sports field': {
         'path': 'DistanceToSportsField.geojson',
@@ -194,23 +194,6 @@ file_options = {
         },
         'title': 'Nature and forest areas',
     },
-    'Net labor participation': {
-        'path': 'NetLaborParticipation.geojson',
-        'year_columns': {
-            '2013': 'Year2013',
-            '2014': 'Year2014',
-            '2015': 'Year2015',
-            '2016': 'Year2016',
-            '2017': 'Year2017',
-            '2018': 'Year2018',
-            '2019': 'Year2019',
-            '2020': 'Year2020',
-            '2021': 'Year2021',
-            '2022': 'Year2022',
-            '2023': 'Year2023',
-        },
-        'title': 'Net labor participation',
-    },
     'Number of crimes encountered': {
         'path': 'NumberCrimes.geojson',
         'year_columns': {
@@ -237,7 +220,7 @@ file_options = {
             '2021': 'Year2021',
             '2023': 'Year2023',
         },
-        'title': 'Often feeling unsafe in the neighbourhood',
+        'title': 'Often feeling unsafe in the neighborhood',
     },
     'Overweight': {
         'path': 'Overweight.geojson',
@@ -248,16 +231,7 @@ file_options = {
         },
         'title': 'Overweight',
     },
-    'People with one or more long-term illnesses or conditions': {
-        'path': 'PeopleWithIllness.geojson',
-        'year_columns': {
-            '2016': 'Year2016',
-            '2020': 'Year2020',
-            '2022': 'Year2022',
-        },
-        'title': 'People with one or more long-term illnesses or conditions',
-    },
-    'Population with starting qualifications': {
+    'Population with a starting qualification': {
         'path': 'PopulationWithStartingQualification.geojson',
         'year_columns': {
             '2013': 'Year2013',
@@ -272,7 +246,23 @@ file_options = {
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Population with starting qualifications',
+        'title': 'Population with a starting qualification',
+    },
+    'Private solar energy': {
+        'path': 'SolarEnergy.geojson',
+        'year_columns': {
+            '2013': 'Year2013',
+            '2014': 'Year2014',
+            '2015': 'Year2015',
+            '2016': 'Year2016',
+            '2017': 'Year2017',
+            '2018': 'Year2018',
+            '2019': 'Year2019',
+            '2020': 'Year2020',
+            '2021': 'Year2021',
+            '2022': 'Year2022',
+        },
+        'title': 'Private solar energy',
     },
     'Quality of bathing water coastal waters': {
         'path': 'QualityOfBathingWaterCoastalWaters.geojson',
@@ -325,14 +315,14 @@ file_options = {
         },
         'title': 'Recorded crimes',
     },
-    'Registered Problematic Debt': {
+    'Registered problematic debt': {
         'path': 'RegisteredProblematicDebt.geojson',
         'year_columns': {
             '2021': 'Year2021',
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Registered Problematic Debt',
+        'title': 'Registered problematic debt',
     },
     'Satisfaction with free time': {
         'path': 'SatisfactionFreeTime.geojson',
@@ -402,7 +392,7 @@ file_options = {
             '2023': 'Year2023',
         },
         'title': 'Satisfaction with social life',
-    },
+   },
     'Social cohesion': {
         'path': 'SocialCohesion.geojson',
         'year_columns': {
@@ -416,22 +406,6 @@ file_options = {
             '2023': 'Year2023',
         },
         'title': 'Social cohesion',
-    },
-    'Private solar energy': {
-        'path': 'SolarEnergy.geojson',
-        'year_columns': {
-            '2013': 'Year2013',
-            '2014': 'Year2014',
-            '2015': 'Year2015',
-            '2016': 'Year2016',
-            '2017': 'Year2017',
-            '2018': 'Year2018',
-            '2019': 'Year2019',
-            '2020': 'Year2020',
-            '2021': 'Year2021',
-            '2022': 'Year2022',
-        },
-        'title': 'Private solar energy',
     },
     'Trust in institutions': {
         'path': 'TrustInstitutions.geojson',
@@ -508,15 +482,15 @@ file_options = {
             '2020': 'Year2020',
             '2021': 'Year2021',
         },
-        'title': 'Air Quality',
+        'title': 'Air quality',
     },
-    'Distance to Living Facilities': {
+    'Distance to living facilities': {
         'path': 'Theme_Distance_to_Living_Facilities.geojson',
         'year_columns': {
             '2015': 'Year2015',
             '2017': 'Year2017',
         },
-        'title': 'Distance to Living Facilities',
+        'title': 'Distance to living facilities',
     },
     'Environment': {
         'path': 'Theme_Environment.geojson',
@@ -534,7 +508,7 @@ file_options = {
         },
         'title': 'Health',
     },
-    'Labor and Free Time': {
+    'Labor and free time': {
         'path': 'ThemeLaborandFreeTime.geojson',
         'year_columns': {
             '2013': 'Year2013',
@@ -549,23 +523,23 @@ file_options = {
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Labor and Free Time',
+        'title': 'Labor and free time',
     },
-    'Material Welfare and Economic Capital': {
+    'Material welfare and economic capital': {
         'path': 'Theme_Material_Welfare_and_Economic_Capital.geojson',
         'year_columns': {
             '2021': 'Year2021',
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Material Welfare and Economic Capital',
+        'title': 'Material welfare and economic capital',
     },
-    'Natural Capital': {
+    'Natural capital': {
         'path': 'Theme_Natural_Capital.geojson',
         'year_columns': {
             '2015': 'Year2015',
         },
-        'title': 'Natural Capital',
+        'title': 'Natural capital',
     },
     'Nature': {
         'path': 'Theme_Nature.geojson',
@@ -592,7 +566,7 @@ file_options = {
         },
         'title': 'Society',
     },
-    'Well-Being': {
+    'Well-being': {
         'path': 'Theme_Wellbeing.geojson',
         'year_columns': {
             '2013': 'Year2013',
@@ -607,6 +581,6 @@ file_options = {
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Well-Being',
+        'title': 'Well-being',
     }
 }
