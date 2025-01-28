@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import folium
 import json
 import pydeck as pdk 
-from test1_en import file_options
+from test1_en import file_options, color_schemes
 from engdict import Themes
 
 # Page configuration
@@ -66,6 +66,9 @@ with st.sidebar:
 
     year_columns = file_options[selected_indicator]["year_columns"]
     selected_year = st.selectbox("Select a year:", list(year_columns.keys()))
+    
+    selected_scheme_name = st.selectbox("Select a color scheme:", list(color_schemes.keys()))
+    selected_scheme = color_schemes[selected_scheme_name]
 
 # Correctly define columns
 col = st.columns((2,1), gap='medium')
@@ -102,16 +105,16 @@ with col[0]:
 
     # Function to assign colors based on quantile
     def get_color(value):
-        if pd.isna(value):
-            return [255, 0, 0]  # Red for missing values
-        elif value <= quantiles[1]:  # 0-25% quantile range
-            return [228, 239, 209]  
-        elif value <= quantiles[2]:  # 25-50% quantile range
-            return [152, 197, 194]  
-        elif value <= quantiles[3]:  # 50-75% quantile range
-            return [73, 127, 153]  
-        else:  # 75-100% quantile range
-            return [44, 86, 124]  
+    if pd.isna(value):
+        return selected_scheme[0]  # Color for missing values
+    elif value <= quantiles[1]:  # 0-25% quantile range
+        return selected_scheme[1]
+    elif value <= quantiles[2]:  # 25-50% quantile range
+        return selected_scheme[2]
+    elif value <= quantiles[3]:  # 50-75% quantile range
+        return selected_scheme[3]
+    else:  # 75-100% quantile range
+        return selected_scheme[4]
 
     # Apply the color function to each feature
     indicator["fill_color"] = indicator[selected_column].apply(get_color)
