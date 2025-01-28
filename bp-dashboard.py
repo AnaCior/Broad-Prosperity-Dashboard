@@ -154,6 +154,8 @@ with col[0]:
     # Display the map with Streamlit
     st.pydeck_chart(r)
 
+    if selected_indicator:
+            st.markdown(Themes[selected_indicator])
 # Left Column: Intro
 with col[1]:
     st.markdown("""
@@ -167,8 +169,7 @@ with col[1]:
     work, housing quality, nature, health, and well-being. CMO STAMM focuses on improving 
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
-    if selected_indicator:
-        st.markdown(Themes[selected_indicator])
+    
 
     st.write('''
             - Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
