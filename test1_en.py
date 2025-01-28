@@ -593,26 +593,26 @@ color_schemes = {
         [73, 127, 153],   # 50-75% quantile range
         [44, 86, 124]     # 75-100% quantile range
     ],
-    "Grey to Red": [
+    "Reds": [
         [255, 255, 255],  # White for missing values
-        [190, 202, 218],  # 0-25% quantile range
-        [165, 163, 168],  # 25-50% quantile range
-        [199, 100, 87],   # 50-75% quantile range
-        [155, 32, 24]     # 75-100% quantile range
+        [255, 194, 179],  # 0-25% quantile range
+        [255, 112, 77],   # 25-50% quantile range
+        [230, 46, 0],     # 50-75% quantile range
+        [153, 31, 0]      # 75-100% quantile range
     ],
-    "Black to Pink": [
+    "Purples": [
         [255, 255, 255],  # White for missing values
-        [46, 43, 40],     # 0-25% quantile range
-        [83, 80, 75],     # 25-50% quantile range
-        [169, 60, 167],   # 50-75% quantile range
-        [248, 128, 255]   # 75-100% quantile range
+        [255, 204, 255],  # 0-25% quantile range
+        [255, 128, 255],  # 25-50% quantile range
+        [255, 51, 255],   # 50-75% quantile range
+        [204, 0, 204]     # 75-100% quantile range
     ],
-    "Orange to Purple": [
+    "Greens": [
         [255, 255, 255],  # White for missing values
-        [249, 179, 1],    # 0-25% quantile range
-        [119, 95, 40],    # 25-50% quantile range
-        [72, 68, 111],    # 50-75% quantile range
-        [144, 129, 255]   # 75-100% quantile range
+        [204, 255, 204],  # 0-25% quantile range
+        [128, 255, 128],  # 25-50% quantile range
+        [51, 255, 51],    # 50-75% quantile range
+        [0, 230, 0]       # 75-100% quantile range
     ]
 }
         
