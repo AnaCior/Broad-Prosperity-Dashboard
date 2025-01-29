@@ -169,6 +169,8 @@ with col[1]:
     work, housing quality, nature, health, and well-being. CMO STAMM focuses on improving 
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
+
+    df_indicators = pd.read_csv('indmaarmunn.csv')
     # DataFrame display
     if selected_indicator and selected_year:
         df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
