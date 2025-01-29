@@ -41,7 +41,7 @@ st.markdown("""
 
 # Load data
 try:
-    names = pd.read_excel("selected_column (1).xlsx", engine='openpyxl')
+    names = pd.read_excel("selected_column.xlsx", engine='openpyxl')
 except FileNotFoundError:
     st.error("Error: 'selected_column.xlsx' not found.")
     st.stop()
