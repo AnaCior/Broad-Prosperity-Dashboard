@@ -25,27 +25,49 @@ Themes = {
     """,
     "Distance to café etc.": """
         **Welcome to the Distance to Café, etc. indicator**
-        - This indicator is part of the Housing theme.
+        - This indicator is part of the Distance and Living Facilities theme. It measures the average distance residents 
+        travel to access cafés and similar establishments, assuming a 4.184 km travel distance. Using 
+        municipal data and spatial analysis in ArcGIS Pro, distances are adjusted to account for neighboring 
+        municipalities. If spillover effects suggest a greater distance than the original municipal value, 
+        the original value is retained.
         - Measuring unit: Kilometers
     """,
     "Distance to primary school": """
         **Welcome to the Distance to Primary School indicator**
-        - This indicator is part of the Housing theme.
+        - This indicator is part of the Distance to Living Facilities theme. It measures the average distance 
+        residents travel to access a primary school, assuming a 4.023 km travel distance. Using municipal data 
+        and spatial analysis in ArcGIS Pro, distances are adjusted to account for neighboring municipalities. 
+        If spillover effects suggest a greater distance than the original municipal value, the original value 
+        is retained.
         - Measuring unit: Kilometers
     """,
     "Distance to public green areas": """
         **Welcome to the Distance to Public Green Areas indicator**
-        - This indicator is part of the Environment theme.
+        - This indicator is part of the Environment theme, in the Nature sub-theme. It measures the average 
+        distance residents travel to access public green spaces, assuming a 1.65 km travel distance. 
+        Using municipal data and spatial analysis in ArcGIS Pro, distances are adjusted to account for 
+        neighboring municipalities. If spillover effects suggest a greater distance than the original 
+        municipal value, the original value is retained.
         - Measuring unit: Kilometers
     """,
     "Distance to public transportation": """
         **Welcome to the Distance to Public Transport indicator**
-        - This indicator is part of the Work and Leisure theme.
+        - This indicator is part of the Labor and Free Time theme.
+        -It measures the average distance residents travel to access public transportation, 
+        considering a 791-meter assumed travel distance. Using municipal data and
+        spatial analysis in ArcGIS Pro, distances are adjusted to account for neighboring
+        municipalities. If spillover effects suggest a greater distance than the original
+        municipal value, the original value is retained.
         - Measuring unit: Kilometers
     """,
     "Distance to sports field": """
         **Welcome to the Distance to Sports Facility indicator**
-        - This indicator is part of the Housing theme.
+        - This indicator is part of the Labor and Free Time theme.
+        -It measures the average distance residents travel to access sports fields, 
+        assuming a 1 km travel distance. Using municipal data and spatial analysis in ArcGIS Pro, 
+        distances are adjusted to account for neighboring municipalities. 
+        If spillover effects suggest a greater distance than the original municipal value, 
+        the original value is retained.
         - Measuring unit: Kilometers
     """,
     "Emissions of particulate matter to air": """
@@ -113,7 +135,10 @@ Themes = {
     """,
     "Population with a starting qualification": """
         **Welcome to the Population with a Starting Qualification indicator**
-        - This indicator is part of the Education theme.
+        - This indicator is part of the Labor and Free Time theme. It measures the percentage of individuals 
+        aged 15 to 74 with a starting qualification, using a 25 km spillover distance to reflect regional 
+        influence. Due to data limitations, calculations are based on the working population (aged 15 to 64). 
+        Spatial analysis in ArcGIS Pro accounts for municipal spillovers and adjusts the values accordingly.
         - Measuring unit: Percentage of the population with a starting qualification
     """,
     "Private solar energy": """
@@ -171,23 +196,26 @@ Themes = {
     """,
     "Trust in institutions": """
         **Welcome to the Trust in Institutions indicator**
-        - This indicator is part of the Society theme.
-        - Preliminary figures. When a new year is added, the model re-estimates 
-        all years in the series. Refer to the Technical Explanation for more 
-        details on interpreting model estimates and margins.
+        - This indicator is part of the Society theme. It measures the percentage of the population aged 15 
+        and older who have sufficient trust in institutions, with a 41.05 km spillover distance reflecting 
+        regional influence. Using municipal data and spatial analysis in ArcGIS Pro, trust levels are adjusted 
+        to account for neighboring municipalities while considering population size.
         - Measuring unit: Percentage of the population aged 15+ has sufficient confidence in institutions.
     """,
     "Trust in others": """
         **Welcome to the Trust in Others indicator**
-        - This indicator is part of the Society theme.
-        - Preliminary figures. When a new year is added, the model re-estimates 
-        all years in the series. Refer to the Technical Explanation for more 
-        details on interpreting model estimates and margins.
+        - This indicator is part of the Society theme. It measures the percentage of the population aged 15 
+        and older who have sufficient trust in others, with a 41.05 km spillover distance reflecting regional 
+        influence. Using municipal data and spatial analysis in ArcGIS Pro, trust levels are adjusted to
+        account for neighboring municipalities while considering population size.
         - Measuring unit: Percentage of population aged 15+ find most people trustworthy
     """,
     "Unemployment": """
         **Welcome to the Unemployment indicator**
-        - This indicator is part of the Work and Leisure theme.
+        - This indicator is part of the Labor and Free Time theme. It measures the percentage of 
+        the working population who are unemployed, with a 25 km spillover distance reflecting regional
+        influence. Using municipal data and spatial analysis in ArcGIS Pro, unemployment levels are adjusted to
+        account for neighboring municipalities while considering population size.
         - Measuring unit: Percentage of the working population
     """,
     "Volunteer work": """
@@ -211,13 +239,19 @@ Themes = {
     """,
     "Quality of bathing water coastal waters": """
         **Welcome to the Quality of Swimming Water in Coastal Waters indicator**
-        - This indicator is part of the Environment theme.
-        - Measuring unit: Average quality (1=poor to 4=excellent)
+        - This indicator is part of the Environment theme. It measures the average quality of 
+        coastal bathing water, assuming a 1.65 km spillover distance. Using municipal data and 
+        spatial analysis in ArcGIS Pro, quality values are adjusted to account for neighboring municipalities.
+        This ensures that the indicator reflects regional influences on water quality beyond municipal borders.
+        - Measuring unit: Quality score (1=poor to 4=excellent)
     """,
     "Quality of inland bathing water": """
         **Welcome to the Quality of Swimming Water in Inland Waters indicator**
-        - This indicator is part of the Environment theme.
-        - Measuring unit: Average quality (1=poor to 4=excellent)
+        - This indicator is part of the Environment theme. It measures the average quality of inland 
+        bathing water, assuming a 1.65 km spillover distance. Using municipal data and spatial analysis
+        in ArcGIS Pro, quality values are adjusted to account for neighboring municipalities. 
+        This ensures that the indicator reflects regional influences on water quality beyond municipal borders.
+        - Measuring unit: Quality score (1=poor to 4=excellent)
     """,
     "Air quality": """
         **Welcome to the Air Quality theme**
