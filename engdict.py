@@ -75,9 +75,9 @@ Themes = {
         - Measuring unit: Kilometers
     """,
     "Distance to sports field": """
-        **Welcome to the Distance to Sports Facility indicator**
+        **Welcome to the Distance to Sports Field indicator**
         - This indicator is part of the Labor and Free Time theme.
-        -It measures the average distance residents travel to access sports fields, 
+        - It measures the average distance residents travel to access sports fields, 
         assuming a 1 km travel distance. Using municipal data and spatial analysis in ArcGIS Pro, 
         distances are adjusted to account for neighboring municipalities. 
         If spillover effects suggest a greater distance than the original municipal value, 
