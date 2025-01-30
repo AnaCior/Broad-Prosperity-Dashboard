@@ -188,7 +188,7 @@ df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
         # Display the DataFrame using Streamlit
     st.dataframe(
         df_selectedindicator_sorted,
-        column_order=("Gemeentenaamm", "waarde"),
+        column_order=("Gemeentenaam", "waarde"),
         hide_index=True,
         width=None,
         column_config={
