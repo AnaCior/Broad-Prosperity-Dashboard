@@ -41,7 +41,7 @@ st.markdown("""
 
 #######################
 # Loading datasets
-df_indicators = pd.read_excel('small_mergedEN.xlsx')
+df_indicators = pd.read_excel('small_mergedEN.xlsx', engine='openpyxl')
 
 #######################
 
