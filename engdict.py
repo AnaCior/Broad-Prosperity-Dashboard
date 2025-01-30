@@ -373,13 +373,23 @@ Themes = {
     """,
     "Distance to living facilities": """
         **Welcome to the Distance to Living Facilities theme**
-        - In this theme, the following indicators are included: ....
+        The theme Distance to Living Facilities includes three indicators: Distance to Sports Field, Distance to Primary School, and Distance to Café, etc.
+        - Distance to sports field tracks the average distance, by road, from all residents to a terrain used for sports activities (e.g., sports field, sports hall, swimming pool), with a minimum area of 0.5 hectares. 
+        - Distance to primary school measures the average distance from residents to the nearest primary school, based on road distance. It includes only primary schools recognized by the Education Executive Agency (DUO). 
+        - Distance to café, etc. tracks the average distance to the nearest café, coffee house, coffee shop, discotheque, sex/night club, or party center, calculated by road. 
+        - Data for distance to sports field is available for 2015 and 2017. Data for distance to primary school and distance to café, etc. spans 2013-2023. The theme is constructed for the years 2015 and 2017.
+
     """,
     "Environment": """
         **Welcome to the Environment theme**
-        - In this theme, the following indicators are included: Nature area per inhabitant, Emissions of particulate matter to air, 
-        Nature and forest areas, Distance to public green areas, Greenhouse gas emissions per capita, 
-        Quality of inland bathing water, Quality of coastal bathing water
+       The theme Environment includes five indicators: Nature Area per Inhabitant, Emissions of Particulate Matter to Air, Nature and Forest Areas, Distance to Public Green Areas, and Greenhouse Gas Emissions per Capita.
+        - Nature area per inhabitant tracks the amount of hectares of forest and open natural terrain per 1000 inhabitants. 
+        - Emissions of particulate matter to air measures the annual average particulate matter emissions to air, specifically particles with a diameter of less than 2.5 micrometers. 
+        - Nature and forest areas measures the percentage of total land area consisting of forest and open natural terrain. 
+        - Distance to public green areas tracks the average distance from residents to the nearest public green space, such as parks, gardens, or forests. 
+        - Greenhouse gas emissions per capita measures total greenhouse gas emissions (in CO2 equivalents) per inhabitant, including emissions from within the Netherlands, regardless of the residency of the emitter. 
+        - Data for nature area per inhabitant, nature and forest areas, and distance to public green areas is available for 2015 and 2017. Emissions of particulate matter to air has data from 2015 and 2019-2022, while greenhouse gas emissions per capita is available for 2015-2021. - The theme is constructed for the year 2015.
+
     """,
     "Health": """
         **Welcome to the Health theme**
@@ -411,12 +421,13 @@ Themes = {
     """,
     "Natural capital": """
         **Welcome to the Natural Capital theme**
-       The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
-        - Nature area per inhabitant measures the amount of hectares of forest and open natural terrain per 1000 inhabitants. Forest includes terrain planted with trees for timber production and/or nature management, while natural terrain refers to land in its natural dry or wet state.
-        - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain.
-        - Distance to public green areas calculates the average distance from residents to the nearest public green area, such as parks, gardens, or forests, measured over the road. Public green areas are at least one hectare in size and can be both privately and publicly accessible.
-        - Data for all three indicators is available for the years 2015 and 2017. The sub-theme is constructed for the years 2015 and 2017.
-    """,
+       The sub-theme Natural Capital includes four indicators: private solar energy, nature and forest areas, built environment, and emissions of particulate matter to air. 
+        - Private solar energy measures the installed capacity of solar power installations per home at the end of the reference year. 
+        - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain. 
+        - Built environment measures the land used for living, working, shopping, entertainment, culture, and public facilities as a percentage of total land area. 
+        - Emissions of particulate matter to air measures the annual average particulate matter emissions to air, focusing on particles with a diameter of less than 2.5 micrometers. 
+        - Data for private solar energy is available for 2013-2022, while nature and forest areas and built environment have data for 2015 and 2017. Emissions of particulate matter to air has data for 2015 and 2019-2022. - The theme is constructed for the year 2015.
+ """,
     "Nature": """
         **Welcome to the Nature theme**
         The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
@@ -427,8 +438,14 @@ Themes = {
     """,
     "Society": """
         **Welcome to the Society theme**
-        - In this theme, the following indicators are included: Contact with family, friends, or neighbors, 
-        Trust in institutions, Trust in others, Volunteer work
+       The theme Society includes five indicators: Contact with Family, Friends or Neighbours, Trust in Institutions, Trust in Others, Volunteer Work, and Satisfaction with Social Life.
+        - Contact with family, friends or neighbours tracks the percentage of people aged 15 and over who have contact with family, friends, or neighbours at least once a week on average. It averages three indicators: weekly contact with family, friends, and neighbours. 
+        - Trust in institutions measures the percentage of people aged 15 and over who have confidence in three institutions: the House of Representatives, the police, and judges. The score is the average of the three. 
+        - Trust in others tracks the percentage of people aged 15 and over who agree that most people can generally be trusted (generalized trust). 
+        - Volunteer work tracks the percentage of people aged 15 and over who have done voluntary work for organizations or associations in the past 12 months. 
+        - Satisfaction with social life measures the percentage of people aged 18 and over who score between 7 and 10 on a scale of 1 to 10 in response to their satisfaction with social life. 
+        - Data for all five indicators is available from 2013 through 2023. The theme is constructed for the years 2013 through 2023.
+
     """,
     "Well-being": """
         **Welcome to the Well-being theme**
