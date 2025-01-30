@@ -122,6 +122,15 @@ Themes = {
         - This indicator is part of the Environment theme.
         - Measuring unit: ha per 1000 inhabitants
     """,
+    "Net labor particiption" : """
+        **Welcome to the Net Labor Participation indicator**
+        - This indicator is part of Labor and Free Time theme. It measures the percentage of individuals participating in the labor force,
+        assuming a 25 km spillover distance to reflect regional influence. Due to data limitations,
+        calculations use the working population aged 15 to 64. Using municipal data and spatial analysis in ArcGIS Pro,
+        values are adjusted to account for neighboring municipalities. If spillover effects suggest a greater percentage 
+        than the original municipal value, the original value is retained.
+        - Measuring unit: Percentage of the working population
+    """,
     "Number of crimes encountered": """
         **Welcome to the Number of Crimes Encountered indicator**
         - This indicator is part of the Safety theme.
