@@ -1,5 +1,5 @@
 # Define the file options and their year-to-fieldname mappings
-file_options = {
+indicator_options = {
     'Average debt per household': {
         'path': 'AverageDebt.geojson',
         'year_columns': {
@@ -491,7 +491,9 @@ file_options = {
             '2023': 'Year2023',
         },
         'title': 'Volunteer work',
-    },
+    }
+}
+theme_options= {
     'Air quality': {
         'path': 'Theme_Air_Quality.geojson',
         'year_columns': {
