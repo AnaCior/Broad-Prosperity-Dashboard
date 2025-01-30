@@ -114,8 +114,12 @@ Themes = {
     """,
     "Nature and forest areas": """
         **Welcome to the Nature and Forest Areas indicator**
-        - This indicator is part of the Environment theme.
-        - Measuring unit: Percentage of land area
+        - This indicator is part of the Environment theme, in the Nature and Natural Capital sub-themes.
+        It measures the percentage of municipal surface area covered by nature and forests, assuming a 1.65 km
+        spillover distance. Using municipal data and spatial analysis in ArcGIS Pro, values are adjusted to
+        account for neighboring municipalities. If spillover effects suggest a greater percentage than
+        the original municipal value, the original value is retained.
+        - Measuring unit: Percentage of surface area
     """,
     "Nature area per inhabitant": """
         **Welcome to the Nature Area per Inhabitant indicator**
