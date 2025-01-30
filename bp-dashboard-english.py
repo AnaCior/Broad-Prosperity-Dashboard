@@ -58,14 +58,12 @@ with st.sidebar:
 
     if type == "Themes":
         options = theme_options
-        file_options = theme_options
     else:
         options = indicator_options
-        file_options = indicator_options
 
     selected_indicator = st.selectbox("Select a Theme/an Indicator:", options)
 
-    year_columns = file_options[selected_indicator]["year_columns"]
+    year_columns = options[selected_indicator]["year_columns"]
     selected_year = st.selectbox("Select a year:", list(year_columns.keys()))
     
     selected_scheme_name = st.selectbox("Select a color scheme:", list(color_schemes.keys()))
@@ -77,8 +75,8 @@ col = st.columns((2,1), gap='medium')
 
 #  map
 with col[0]:
-    indicator_path = file_options[selected_indicator]["path"]
-    title_base = file_options[selected_indicator]["title"]
+    indicator_path = options[selected_indicator]["path"]
+    title_base = options[selected_indicator]["title"]
 
     # Load the selected file
     indicator = gpd.read_file(indicator_path)
