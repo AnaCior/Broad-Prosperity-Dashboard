@@ -194,6 +194,23 @@ file_options = {
         },
         'title': 'Nature and forest areas',
     },
+    'Net labor participation': {
+        'path': 'NetLaborParticipation.geojson',
+        'year_columns': {
+            '2013': 'Year2013',
+            '2014': 'Year2014',
+            '2015': 'Year2015',
+            '2016': 'Year2016',
+            '2017': 'Year2017',
+            '2018': 'Year2018',
+            '2019': 'Year2019',
+            '2020': 'Year2020',
+            '2021': 'Year2021',
+            '2022': 'Year2022',
+            '2023': 'Year2023',
+        },
+        'title': 'Net labor participation',
+    },
     'Number of crimes encountered': {
         'path': 'NumberCrimes.geojson',
         'year_columns': {
