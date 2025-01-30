@@ -530,7 +530,7 @@ theme_options = {
         'title': 'Health',
     },
     'Labor and free time': {
-        'path': 'ThemeLaborandFreeTime.geojson',
+        'path': 'Theme_Labor_and_Free_Time.geojson',
         'year_columns': {
             '2013': 'Year2013',
             '2014': 'Year2014',
