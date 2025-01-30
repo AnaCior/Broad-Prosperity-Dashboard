@@ -366,7 +366,10 @@ Themes = {
     """,
     "Air quality": """
         **Welcome to the Air Quality theme**
-        - In this theme, the following indicators are included: Emissions of particulate matter to air, Greenhouse gas emissions per capita
+        The sub-theme air quality includes two indicators: emissions of particulate matter to air and greenhouse gas emissions per capita.
+        - Emissions of particulate matter to air tracks the annual average emission of fine particulate matter (less than 2.5 micrometers in diameter).
+        - Greenhouse gas emissions per capita measures the total greenhouse gas emissions (in CO2 equivalents) per inhabitant, following IPCC guidelines. It includes emissions in the Netherlands, regardless of the residency of the emitter, but excludes emissions by Dutch residents abroad.
+        - Data for particulate matter emissions is available for 2015 and 2019-2022, while data for greenhouse gas emissions per capita spans 2015-2021. The sub-theme is constructed for the years 2019-2021.
     """,
     "Distance to living facilities": """
         **Welcome to the Distance to Living Facilities theme**
@@ -390,13 +393,20 @@ Themes = {
     """,
     "Material welfare and economic capital": """
         **Welcome to the Material Welfare and Economic Capital theme**
-        - In this theme, the following indicators are included: Median disposable income, Gross domestic product, 
-        Average debt per household, Median household wealth
+       The sub-theme material welfare and economic prosperity includes four indicators: median disposable income, average debt per household, median household wealth, and average problematic debt. 
+        - Median disposable income tracks the median standardized disposable income per household in euros, adjusted for household size and composition. 
+        - Average debt per household measures the average debt of private households, including mortgages, study debt, consumer debt, and other liabilities, corrected for price developments. 
+        - Median household wealth reflects the balance of assets and liabilities (adjusted for inflation), including bank deposits, real estate, and debts, in 2023 prices. 
+        - Average problematic debt measures the percentage of households with registered problematic debts, based on the Personal Records Database (BRP) as of January 1st of the reference year. 
+        - Data for median disposable income, average debt per household, and median household wealth spans from 2013 to 2023, while data for average problematic debt is available from 2021 to 2023. The theme is constructed for the years 2021-2023. 
     """,
     "Natural capital": """
         **Welcome to the Natural Capital theme**
-        - In this theme, the following indicators are included: Private solar energy, Nature and forest areas, Built environment, 
-        Emissions of particles, Green-blue infrastructure
+       The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
+        - Nature area per inhabitant measures the amount of hectares of forest and open natural terrain per 1000 inhabitants. Forest includes terrain planted with trees for timber production and/or nature management, while natural terrain refers to land in its natural dry or wet state.
+        - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain.
+        - Distance to public green areas calculates the average distance from residents to the nearest public green area, such as parks, gardens, or forests, measured over the road. Public green areas are at least one hectare in size and can be both privately and publicly accessible.
+        - Data for all three indicators is available for the years 2015 and 2017. The sub-theme is constructed for the years 2015 and 2017.
     """,
     "Nature": """
         **Welcome to the Nature theme**
@@ -409,6 +419,9 @@ Themes = {
     """,
     "Well-being": """
         **Welcome to the Well-being theme**
-        - In this theme, the following indicators are included: Satisfaction with life, Satisfaction with free time
+        The sub-theme well-being includes two indicators: satisfaction with free time and satisfaction with life.
+        - Satisfaction with free time measures the percentage of individuals aged 18 and older who give a score between 7 and 10 on their satisfaction with the amount of free time they have, based on a scale from 1 to 10. 
+        - Satisfaction with life measures the percentage of individuals aged 18 and older who give a score between 7 and 10 on their overall life satisfaction, based on the same scale. 
+        - Data for both indicators spans the years 2013-2023, and both indicators have been fully incorporated into the well-being score for the theme.
     """,
 }
