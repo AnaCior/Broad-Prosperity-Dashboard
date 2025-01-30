@@ -167,37 +167,36 @@ with col[1]:
     df_indicators = pd.read_excel('small_mergedEN.xlsx', engine='openpyxl')
     
     # DataFrame display
-    if selected_indicator and selected_year:
-        df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
-        selected_year = str(selected_year)  # Convert selected year to string
+    
+df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
+selected_year = str(selected_year)  # Convert selected year to string
 
-        df_selectedindicator = df_indicators[
-            (df_indicators['Label'] == selected_indicator) &
-            (df_indicators['jaar'] == selected_year)
-        ]
+df_selectedindicator = df_indicators[
+    (df_indicators['Label'] == selected_indicator) &
+    (df_indicators['jaar'] == selected_year)
+]
 
-        df_selectedindicator_sorted = df_selectedindicator.sort_values(by='waarde', ascending=False)
+df_selectedindicator_sorted = df_selectedindicator.sort_values(by='waarde', ascending=False)
 
-        columns_to_include = ['Gemeentenaam', 'waarde']
+columns_to_include = ['Gemeentenaam', 'waarde']
+df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
+    with st.expander(f'*Municipalities ranked from high to low in {selected_indicator}*'):
 
-        df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
-        with st.expander(f'*Municipalities ranked from high to low in {selected_indicator}*'):
-
-            if df_selectedindicator_sorted.empty:
-                st.warning("No data available for the selected indicator.")
-            else:
-                # Display the DataFrame using Streamlit
-                st.dataframe(
-                    df_selectedindicator_sorted,
-                    column_order=("Gemeentenaamm", "waarde"),
-                    hide_index=True,
-                    width=None,
-                    column_config={
-                        "Gemeentenaam": st.column_config.TextColumn(
-                            "Municipality",
+    if df_selectedindicator_sorted.empty:
+        st.warning("No data available for the selected indicator.")
+    else:
+        # Display the DataFrame using Streamlit
+    st.dataframe(
+        df_selectedindicator_sorted,
+        column_order=("Gemeentenaamm", "waarde"),
+        hide_index=True,
+        width=None,
+        column_config={
+        "Gemeentenaam": st.column_config.TextColumn(
+            "Municipality",
                         ),
-                        "waarde": st.column_config.TextColumn(
-                            "Value",  # This will now display as plain numbers
+            "waarde": st.column_config.TextColumn(
+                        "Value",  # This will now display as plain numbers
                         ),
                     }
                 )
