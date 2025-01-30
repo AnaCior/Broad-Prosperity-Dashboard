@@ -532,10 +532,6 @@ theme_options = {
     'Labor and free time': {
         'path': 'Theme_Labor_and_Free_Time.geojson',
         'year_columns': {
-            '2013': 'Year2013',
-            '2014': 'Year2014',
-            '2015': 'Year2015',
-            '2016': 'Year2016',
             '2017': 'Year2017',
             '2018': 'Year2018',
             '2019': 'Year2019',
