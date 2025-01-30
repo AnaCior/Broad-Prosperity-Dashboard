@@ -3,7 +3,12 @@
 Themes = {
     "Average debt per household": """
         **Welcome to the Average Household Debt indicator**
-        - This indicator is part of the Economic Capital theme.
+        - This indicator is part of the Material Welfare and Economic Capital theme. This 
+        indicator tracks the average household debt, considering spillover effects from 
+        neighboring municipalities. Using ArcGIS Pro, neighboring municipalities are identified,
+        and their total household debt and number of households are combined to calculate a 
+        collective score. The final value is then recalculated back to average debt per 
+        household, considering the spillover effect from neighboring areas.
         - 2022 figures are preliminary, and the adjustment for price changes 
         in 2021 and 2022 is based on the consumer price research series, which 
         uses actual energy prices paid. This aligns more closely with the price 
@@ -135,7 +140,11 @@ Themes = {
     """,
     "Median household wealth": """
         **Welcome to the Median Household Wealth indicator**
-        - This indicator is part of the Economic Capital theme.
+        - This indicator is part of the Material Welfare and Economic Capital theme. This indicator 
+        measures median household wealth, incorporating spillover effects from neighboring municipalities.
+        Using ArcGIS Pro, neighboring municipalities are identified, and their total household wealth 
+        and number of households are combined to calculate a collective score. The final value is 
+        recalculated back to median household wealth, considering the spillover effect from neighboring areas.
         - 2021 figures are preliminary, and the adjustment for price changes 
         in 2021 is based on the consumer price research series, which uses 
         actual energy prices paid. This aligns more closely with the price 
