@@ -1,8 +1,8 @@
-# Define the file options and their year-to-fieldname mappings
+# Define the file options and their year-to-fieldname mappings for various prosperity indicators
 indicator_options = {
     'Average debt per household': {
-        'path': 'AverageDebt.geojson',
-        'year_columns': {
+        'path': 'AverageDebt.geojson',  # Path to the GeoJSON file for this indicator
+        'year_columns': {  # Mapping of years to column names in the data
             '2013': 'Year2013',
             '2014': 'Year2014',
             '2015': 'Year2015',
@@ -15,7 +15,7 @@ indicator_options = {
             '2022': 'Year2022',
             '2023': 'Year2023',
         },
-        'title': 'Average debt per household',
+        'title': 'Average debt per household',  # Title of the indicator
     },
     'Built up area': {
         'path': 'BuiltUpArea.geojson',
@@ -493,15 +493,17 @@ indicator_options = {
         'title': 'Volunteer work',
     }
 }
-theme_options= {
+
+# Define the file options for themes of prosperity indicators and their year-to-fieldname mappings
+theme_options = {
     'Air quality': {
-        'path': 'Theme_Air_Quality.geojson',
-        'year_columns': {
+        'path': 'Theme_Air_Quality.geojson',  # Path to the GeoJSON file for this theme
+        'year_columns': {  # Mapping of years to column names in the data
             '2019': 'Year2019',
             '2020': 'Year2020',
             '2021': 'Year2021',
         },
-        'title': 'Air quality',
+        'title': 'Air quality',  # Title of the theme
     },
     'Distance to living facilities': {
         'path': 'Theme_Distance_to_Living_Facilities.geojson',
@@ -604,35 +606,43 @@ theme_options= {
     }
 }
 
+# Define color schemes for different quantile ranges in prosperity data visualization
 color_schemes = {
+    # Blues color scheme for representing quantile ranges
     "Blues": [
-        [255, 255, 255],  # White for missing values
-        [228, 239, 209],  # 0-25% quantile range
-        [152, 197, 194],  # 25-50% quantile range
-        [73, 127, 153],   # 50-75% quantile range
-        [44, 86, 124]     # 75-100% quantile range
+        [255, 255, 255],  # White for missing values (no data)
+        [228, 239, 209],  # Lightest blue for 0-25% quantile range (low values)
+        [152, 197, 194],  # Medium light blue for 25-50% quantile range (mid-low values)
+        [73, 127, 153],   # Darker blue for 50-75% quantile range (mid-high values)
+        [44, 86, 124]     # Deep blue for 75-100% quantile range (high values)
     ],
+    
+    # Reds color scheme for representing quantile ranges
     "Reds": [
-        [255, 255, 255],  # White for missing values
-        [255, 194, 179],  # 0-25% quantile range
-        [255, 112, 77],   # 25-50% quantile range
-        [230, 46, 0],     # 50-75% quantile range
-        [153, 31, 0]      # 75-100% quantile range
+        [255, 255, 255],  # White for missing values (no data)
+        [255, 194, 179],  # Lightest red for 0-25% quantile range (low values)
+        [255, 112, 77],   # Medium red for 25-50% quantile range (mid-low values)
+        [230, 46, 0],     # Strong red for 50-75% quantile range (mid-high values)
+        [153, 31, 0]      # Dark red for 75-100% quantile range (high values)
     ],
+    
+    # Purples color scheme for representing quantile ranges
     "Purples": [
-        [255, 255, 255],  # White for missing values
-        [255, 204, 255],  # 0-25% quantile range
-        [255, 128, 255],  # 25-50% quantile range
-        [255, 51, 255],   # 50-75% quantile range
-        [204, 0, 204]     # 75-100% quantile range
+        [255, 255, 255],  # White for missing values (no data)
+        [255, 204, 255],  # Light purple for 0-25% quantile range (low values)
+        [255, 128, 255],  # Medium purple for 25-50% quantile range (mid-low values)
+        [255, 51, 255],   # Vivid purple for 50-75% quantile range (mid-high values)
+        [204, 0, 204]     # Deep purple for 75-100% quantile range (high values)
     ],
+    
+    # Greens color scheme for representing quantile ranges
     "Greens": [
-        [255, 255, 255],  # White for missing values
-        [204, 255, 204],  # 0-25% quantile range
-        [128, 255, 128],  # 25-50% quantile range
-        [51, 255, 51],    # 50-75% quantile range
-        [0, 153, 0]       # 75-100% quantile range
+        [255, 255, 255],  # White for missing values (no data)
+        [204, 255, 204],  # Lightest green for 0-25% quantile range (low values)
+        [128, 255, 128],  # Medium green for 25-50% quantile range (mid-low values)
+        [51, 255, 51],    # Bright green for 50-75% quantile range (mid-high values)
+        [0, 153, 0]       # Dark green for 75-100% quantile range (high values)
     ]
 }
-        
+
         
