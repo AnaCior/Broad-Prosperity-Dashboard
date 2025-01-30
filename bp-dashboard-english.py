@@ -57,7 +57,7 @@ with st.sidebar:
                  "Indicators within the themes"
              ],)
 
-     if type == "Themes":
+    if type == "Themes":
         options = df_thema["Thema"].dropna().unique().tolist()
     else:
         options = file_options
