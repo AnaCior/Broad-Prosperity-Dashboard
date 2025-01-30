@@ -169,7 +169,42 @@ with col[1]:
     """)
 
     st.write('''- Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
+
+    df_indicators = pd.read_excel('small_mergedEN.xlsx')
     
+    df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
+    selected_year = str(selected_year)  # Convert selected year to string
+
+    df_selectedindicator = df_indicators[
+        (df_indicators['label'] == selected_indicator)&
+        (df_indicators['jaar'] == selected_year)]
+
+    df_selectedindicator_sorted = df_selectedindicator.sort_values(by='waarde', ascending=False)
+    
+    columns_to_include = ['Gemeentenaam', 'waarde'] 
+    
+    df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
+    with st.expander(f'**Municipalities ranked from high to low in {selected_indicator}**'):
+
+        if df_selectedindicator_sorted.empty:
+                st.warning("No data available for the selected indicator.")
+        else:
+            # Display the DataFrame using Streamlit
+            st.dataframe(
+            df_selectedindicator_sorted, 
+            column_order=("Gemeentenaam", "waarde"), 
+            hide_index=True, 
+            width=None, 
+            column_config={
+                "Gemeentenaam": st.column_config.TextColumn(
+                    "Statnaam",
+                ),
+                "waarde": st.column_config.TextColumn(
+                    "Waarde",  # This will now display as plain numbers
+                ),
+            }
+        )
+            
     # Links to the Dutch page and download page
     st.markdown("""
     <div style='text-align: left; padding: 10px; display: flex; align-items: center;'>
