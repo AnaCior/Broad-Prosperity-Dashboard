@@ -39,12 +39,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Load data
-try:
-    names = pd.read_excel("selected_column.xlsx", engine='openpyxl')
-except FileNotFoundError:
-    st.error("Error: 'selected_column.xlsx' not found.")
-    st.stop()
+#######################
+# Loading datasets
+df_indicators = pd.read_csv('indmaarmunn.csv')
+df_thema = pd.read_excel('thematicpath.xlsx')
+
+#######################
 
 # Sidebar
 with st.sidebar:
@@ -57,10 +57,10 @@ with st.sidebar:
                  "Indicators within the themes"
              ],)
 
-    if type == "Themes":
-        options = names['Theme'].dropna().unique().tolist()
+     if type == "Themes":
+        options = df_thema["Thema"].dropna().unique().tolist()
     else:
-        options = names['Label'].dropna().unique().tolist()
+        options = file_options
 
     selected_indicator = st.selectbox("Select a Theme/an Indicator:", options)
 
@@ -170,7 +170,6 @@ with col[1]:
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
 
-    df_indicators = pd.read_csv('indmaarmunn.csv')
     # DataFrame display
     if selected_indicator and selected_year:
         df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
