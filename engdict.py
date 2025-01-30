@@ -383,13 +383,22 @@ Themes = {
     """,
     "Health": """
         **Welcome to the Health theme**
-        - In this theme, the following indicators are included: Overweight, Experienced Health, 
-        Life expectancy of the population, People with one or more long-term illnesses or conditions
+       The theme Health includes three indicators: Overweight, Experienced Health, and People with one or more long-term illnesses or conditions. 
+        - Overweight tracks the percentage of individuals aged 18 and older with a BMI of 25.0 kg/m² or higher, based on self-reported values. 
+        - Experienced health measures the percentage of individuals aged 18 and older who rate their general health as 'good' or 'very good'. 
+        - People with one or more long-term illnesses or conditions tracks the percentage of individuals aged 18 and older with one or more long-term illnesses or conditions, defined as lasting 6 months or more. 
+        - Data for overweight, experienced health, and people with one or more long-term illnesses or conditions is available for the years 2016, 2020, and 2022. The theme is constructed using data from these years.
+
     """,
     "Labor and free time": """
         **Welcome to the Labor and Free Time theme**
-        - In this theme, the following indicators are included: Net labor participation, Gross labor participation, 
-        Highly educated population, Unemployment, Vacancy rate
+       The theme Labour and Free Time includes four indicators: Net Labour Force Participation, Highly Educated Population, Unemployment, and Distance to Public Transportation.
+        - Net labour force participation measures the share of the working population (aged 15-74) in the total population of the same age group (working and non-working). 
+        - Highly educated population tracks the percentage of individuals aged 15-74 with a diploma at MBO 2, 3, or 4, HAVO, VWO, HBO, or WO level. 
+        - Unemployment measures the percentage of the labour force (employed and unemployed) that is unemployed, defined as those without paid work, actively seeking employment, and available for work. 
+        - Distance to public transportation tracks the average distance from residents to the nearest public transport stop, covering train, tram, bus, metro, and ferry, based on the 2023 cycle network. 
+        - Data for net labour force participation, highly educated population, and unemployment is available for the years 2013-2023. Data for distance to public transportation spans 2017-2023. The theme is constructed for the years 2017-2023.
+
     """,
     "Material welfare and economic capital": """
         **Welcome to the Material Welfare and Economic Capital theme**
@@ -410,7 +419,11 @@ Themes = {
     """,
     "Nature": """
         **Welcome to the Nature theme**
-        - In this theme, the following indicators are included: ....
+        The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
+        - Nature area per inhabitant measures the amount of hectares of forest and open natural terrain per 1000 inhabitants. Forest includes terrain planted with trees for timber production and/or nature management, while natural terrain refers to land in its natural dry or wet state.
+        - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain.
+        - Distance to public green areas calculates the average distance from residents to the nearest public green area, such as parks, gardens, or forests, measured over the road. Public green areas are at least one hectare in size and can be both privately and publicly accessible.
+        - Data for all three indicators is available for the years 2015 and 2017. The sub-theme is constructed for the years 2015 and 2017.
     """,
     "Society": """
         **Welcome to the Society theme**
