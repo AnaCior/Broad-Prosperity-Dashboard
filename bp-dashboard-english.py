@@ -59,8 +59,10 @@ with st.sidebar:
 
     if type == "Themes":
         options = df_thema["Theme"].dropna().unique().tolist()
+        file_options = theme_options
     else:
-        options = file_options
+        options = indicator_options
+        file_options = indicator_options
 
     selected_indicator = st.selectbox("Select a Theme/an Indicator:", options)
 
