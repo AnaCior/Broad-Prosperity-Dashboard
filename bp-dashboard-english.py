@@ -38,11 +38,6 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
-#######################
-# Loading datasets
-df_indicators = pd.read_excel('small_mergedEN.xlsx', engine='openpyxl')
-
 #######################
 
 # Sidebar
@@ -169,6 +164,8 @@ with col[1]:
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
 
+    df_indicators = pd.read_excel('small_mergedEN.xlsx', engine='openpyxl')
+    
     # DataFrame display
     if selected_indicator and selected_year:
         df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
