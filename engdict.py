@@ -169,7 +169,7 @@ Themes = {
         municipal value, the original value is retained.
         - Measuring unit: Square meters per 1000 inhabitants
     """,
-    "Net labor particiption" : """
+    "Net labor participation" : """
         **Welcome to the Net Labor Participation indicator**
         - This indicator is part of Labor and Free Time theme. It measures the percentage of individuals participating in the labor force,
         assuming a 25 km spillover distance to reflect regional influence. Due to data limitations,
