@@ -72,8 +72,12 @@ Themes = {
     """,
     "Emissions of particulate matter to air": """
         **Welcome to the Emissions of Particulate Matter to Air indicator**
-        - This indicator is part of the Environment theme.
-        - Measuring unit: microgram PM 2.5 per m^3
+        - This indicator is part of the Environment theme, in the Air Quality and Natural Capital sub-themes. 
+        It measures the emissions of particulate matter (PM₂.₅) to air, assuming a 500-meter spillover distance
+        to reflect regional dispersion. Using municipal data and spatial analysis in ArcGIS Pro,
+        values are adjusted to account for neighboring municipalities. If spillover effects suggest
+        a greater emission value than the original municipal value, the original value is retained.
+        - Measuring unit: kg PM₂.₅ per km²
     """,
     "Experienced health": """
         **Welcome to the Experienced Health indicator**
@@ -123,8 +127,12 @@ Themes = {
     """,
     "Nature area per inhabitant": """
         **Welcome to the Nature Area per Inhabitant indicator**
-        - This indicator is part of the Environment theme.
-        - Measuring unit: ha per 1000 inhabitants
+        - This indicator is part of the Environment theme, in the Nature sub-theme. It measures the amount 
+        of nature area per 1,000 inhabitants, assuming a 1.65 km spillover distance to reflect regional 
+        accessibility. Using municipal data and spatial analysis in ArcGIS Pro, values are adjusted to account
+        for neighboring municipalities. If spillover effects suggest a greater value than the original 
+        municipal value, the original value is retained.
+        - Measuring unit: Square meters per 1000 inhabitants
     """,
     "Net labor particiption" : """
         **Welcome to the Net Labor Participation indicator**
@@ -156,8 +164,11 @@ Themes = {
     """,
     "Private solar energy": """
         **Welcome to the Private Solar Energy indicator**
-        - This indicator is part of the Natural Capital theme.
-        - 2021 and 2022 figures are preliminary.
+        - This indicator is part of the Natural Capital sub-theme. 
+        It measures private solar energy production per household, assuming a 1 km spillover distance to
+        reflect regional influence. Using municipal data and spatial analysis in ArcGIS Pro,
+        values are adjusted to account for neighboring municipalities. If spillover effects suggest
+        a greater value than the original municipal value, the original value is retained.
         - Measuring unit: Watts per home
     """,
     "Recorded crimes": """
