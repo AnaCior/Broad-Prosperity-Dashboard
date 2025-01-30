@@ -12,15 +12,24 @@ Themes = {
     """,
     "Built up area": """
         **Welcome to the Built-up Area indicator**
-        - This indicator is part of the Natural Capital theme.
-        - Measuring unit: Percentage of land area
+        - This indicator is part of the Natural Capital theme. This indicator measures the 
+        percentage of surface area that is built-up within municipalities. First order 
+        contiguity is used, assuming that built-up areas spill over across shared borders. 
+        Using ArcGIS Pro, neighboring municipalities are identified, and the data is combined 
+        to account for spillovers. The final score is recalculated back into a percentage 
+        for each municipality.
+        - Measuring unit: Percentage of land area that is built-up.
     """,
     "Contact with family, friends or neighbors": """
         **Welcome to the Contact with Family, Friends, or Neighbors indicator**
-        - This indicator is part of the Society theme.
-        - Preliminary figures. When a new year is added, the model re-estimates 
-        all years in the series. Refer to the Technical Explanation for more 
-        details on interpreting model estimates and margins.
+        - This indicator is part of the Society theme, focusing on social relationships and 
+        support. It measures the percentage of individuals aged 15 and older who have regular
+        contact (at least once a week) with family, friends, or neighbors.
+        Municipal spillover effects are considered based on shared borders between 
+        municipalities. Using spatial analysis in ArcGIS Pro, values are adjusted by combining
+        data from neighboring municipalities. The final score reflects the broader social 
+        network dynamics, with the value recalculated back to the percentage of individuals 
+        with regular contact.
         - Measuring unit: Percentage of population aged 15+ has contact at least once a week on average
     """,
     "Distance to café etc.": """
@@ -81,26 +90,43 @@ Themes = {
     """,
     "Experienced health": """
         **Welcome to the Experienced Health indicator**
-        - This indicator is part of the Health theme.
-        - For the years 2012 and 2016, the measured population is 19+.
+        - This indicator is part of the Health theme. It measures the percentage of individuals
+        who rate their health as (very) good, assuming spillover effects occur between 
+        neighboring municipalities based on shared borders. Using municipal data and spatial 
+        analysis in ArcGIS Pro, values are adjusted to account for neighboring municipalities.
+        If spillover effects suggest a greater percentage than the original municipal value, 
+        the original value is retained.
         - Measuring unit: Percentage of the population aged 18+ consider their own health to be (very) good
     """,
     "Greenhouse gas emissions per capita": """
         **Welcome to the Greenhouse Gas Emissions per Inhabitant indicator**
-        - This indicator is part of the Environment theme.
+        - This indicator is part of the Environment theme and Air-Quality sub-theme. This indicator 
+        tracks the greenhouse gas emissions per capita for each municipality, adjusted for 
+        neighboring municipalities' emissions based on shared borders. Using ArcGIS Pro, the 
+        neighborhood summary statistics tool is applied, combining data from neighboring municipalities
+        to calculate an average. The value is then recalculated per capita by dividing the total
+        emissions by the population size of the municipality.
         - The entire series has been adjusted due to new IPCC guidelines.
-        - Measuring unit: Tonnes of CO2 equivalent per inahbitant
+        - Measuring unit: Kilograms of CO2 equivalent per inahbitant
     """,
     "Life expectancy of the population": """
         **Welcome to the Life Expectancy of the Population indicator**
-        - This indicator is part of the Health theme.
-        - Average life expectancy over the period 2018-2021, not determined 
-        separately per year.
+        - This indicator is part of the Health theme. It measures the life expectancy of the population, 
+        assuming spillover effects occur between neighboring municipalities based on shared borders.
+        Using municipal data and spatial analysis in ArcGIS Pro, values are adjusted to account for 
+        neighboring municipalities. If spillover effects suggest a greater value than the original municipal 
+        value, the original value is retained.
         - Measuring unit: The life expentancy in years at birth
     """,
     "Median disposable income": """
         **Welcome to the Median Disposable Income indicator**
-        - This indicator is part of the Material Well-being theme.
+        - This indicator is part of the Material Welfare and Economics Capital theme. 
+        This indicator tracks the median disposable income per household, with spillover 
+        effects considered for neighboring municipalities. Using ArcGIS Pro, neighboring 
+        municipalities are identified, and their total disposable income and number of
+        households are combined to calculate a collective score. The final value is then 
+        recalculated back to median disposable income, considering the spillover from 
+        neighboring areas.
         - 2021 figures are preliminary, and the adjustment for price changes in 
         2021 is based on the consumer price research series, which uses actual 
         energy prices paid. This aligns more closely with the price developments 
@@ -145,13 +171,20 @@ Themes = {
     """,
     "Number of crimes encountered": """
         **Welcome to the Number of Crimes Encountered indicator**
-        - This indicator is part of the Safety theme.
+        - This indicator measures the number of crimes encountered per 100 inhabitants, 
+        with spillover effects considered for neighboring municipalities. Using ArcGIS Pro, 
+        the neighborhood summary statistics tool calculates the mean of crimes encountered 
+        across neighboring municipalities, adjusting for shared borders. The final value is 
+        then recalculated per 100 inhabitants, considering the population size.
         - Measuring unit: Number of crimes experienced per 100 inhabitants
     """,
     "Overweight": """
         **Welcome to the Overweight indicator**
-        - This indicator is part of the Health theme.
-        - For the year 2016, the measured population is 19+.
+        - This indicator is part of the Health theme. It measures the percentage of overweight 
+        individuals, assuming spillover effects occur between neighboring municipalities based 
+        on shared borders. Using municipal data and spatial analysis in ArcGIS Pro, values are 
+        adjusted to account for neighboring municipalities. If spillover effects suggest 
+        a greater percentage than the original municipal value, the original value is retained.
         - Measuring unit: Percentage of the population aged 18+ is overweight
     """,
     "Population with a starting qualification": """
@@ -173,18 +206,30 @@ Themes = {
     """,
     "Recorded crimes": """
         **Welcome to the Recorded Crimes indicator**
-        - This indicator is part of the Safety theme.
+        - This indicator tracks the recorded crimes per 1,000 inhabitants, adjusted for 
+        neighboring municipalities based on shared borders. Using ArcGIS Pro, the neighborhood
+        summary statistics tool calculates the average of recorded crimes across neighboring 
+        municipalities. The final value is then recalculated per 1,000 inhabitants by adjusting
+        for the population size.
         - 2021 and 2022 figures are preliminary.
         - Measuring unit: Registered crimes per 1000 inhabitants
     """,
     "Registered problematic debt": """
         **Welcome to the Registered Problematic Debt indicator**
-        - This indicator is part of the Economic Capital theme.
-        - Measuring unit: Number of registered problematic debts
+        - This indicator is part of the Material Welfare and Economic Capital theme. First order
+        contiguity is applied, assuming debt issues spill over across shared municipal borders.
+        Using ArcGIS Pro, neighboring municipalities are identified and their data combined. 
+        The final score is recalculated back into a percentage for each municipality, 
+        factoring in the spillover effect.
+        - Measuring unit: Percentage of registered problematic debts
     """,
     "Satisfaction with free time": """
         **Welcome to the Satisfaction with free time indicator**
-        - This indicator is part of the Subjective Well-being theme.
+        - This indicator is part of the Well-being sub-theme. It measures satisfaction with free 
+        time, assuming spillover effects occur between neighboring municipalities based on shared
+        borders. Using municipal data and spatial analysis in ArcGIS Pro, values are adjusted to 
+        account for neighboring municipalities. If spillover effects suggest a greater percentage
+        than the original municipal value, the original value is retained.
         - Preliminary figures. When a new year is added, the model re-estimates 
         all years in the series. Refer to the Technical Explanation for more 
         details on interpreting model estimates and margins.
@@ -192,12 +237,18 @@ Themes = {
     """,
     "Satisfaction with housing": """
         **Welcome to the Satisfaction with Housing indicator**
-        - This indicator is part of the Housing theme.
+        - This indicator is part of the Distance to Living Facilities theme. Due to the lack of
+        specific spillover literature, first order contiguity is applied, assuming satisfaction
+        with housing spills over across shared municipal borders. ArcGIS Pro is used to identify
+        neighboring municipalities, and their satisfaction data is combined. The final score is
+        recalculated back into a percentage for each municipality, considering the spillover effects.
         - Measuring unit: Percentage of private households are (very) satisfied
     """,
     "Satisfaction with life": """
         **Welcome to the Life Satisfaction indicator**
-        - This indicator is part of the Subjective Well-being theme.
+        - This indicator is part of the Well-being theme. It measures satisfaction with life, assuming 
+        spillover effects occur between neighboring municipalities based on shared borders. Using municipal 
+        data and spatial analysis in ArcGIS Pro, values are adjusted to account for neighboring municipalities. If spillover effects suggest a greater percentage than the original municipal value, the original value is retained.
         - Preliminary figures. When a new year is added, the model re-estimates 
         all years in the series. Refer to the Technical Explanation for more 
         details on interpreting model estimates and margins.
@@ -205,17 +256,30 @@ Themes = {
     """,
     "Satisfaction with living environment": """
         **Welcome to the Satisfaction with Living Environment indicator**
-        - This indicator is part of the Housing theme.
+        - This indicator is part of the Distance to Living Facilities theme. Since no specific 
+        spatial spillover literature is available, first order contiguity is used, 
+        assuming that satisfaction with the living environment spills over across shared 
+        municipal borders. Using ArcGIS Pro, neighboring municipalities are identified,
+        and their household satisfaction data is combined. The final score is recalculated 
+        back into a percentage for each municipality, considering the spillover effects.
         - Measuring unit: Percentage of private households are (very) satisfied
     """,
     "Satisfaction with social life": """
         **Welcome to the Satisfaction with Social Life indicator**
-        - This indicator is part of the Subjective Well-being theme.
-        - Measuring unit: Percentage of the population satisfied with their social life
+        - This indicator is part of the Society theme. Due to the lack of specific spatial 
+        spillover literature, first order contiguity is applied, assuming that satisfaction 
+        with social life spills over across shared municipal borders. Using ArcGIS Pro, 
+        neighboring municipalities are identified, and their populations reporting satisfaction
+        are combined. The final score is recalculated back into a percentage for each municipality, 
+        accounting for spillover effects from neighboring areas.
+        - Measuring unit: Percentage of the population(15+) satisfied with their social life
     """,
     "Social cohesion": """
         **Welcome to the Social Cohesion indicator**
-        - This indicator is part of the Social Capital theme.
+        - This indicator measures social cohesion, assuming spillover effects occur between neighboring 
+        municipalities based on shared borders. Using municipal data and spatial analysis in ArcGIS Pro, 
+        values are adjusted to account for neighboring municipalities. If spillover effects suggest a greater 
+        value than the original municipal value, the original value is retained.
         - Measuring unit: Scale score (0-10)
     """,
     "Trust in institutions": """
@@ -244,7 +308,12 @@ Themes = {
     """,
     "Volunteer work": """
         **Welcome to the Volunteering indicator**
-        - This indicator is part of the Society theme.
+        - This indicator is part of the Society theme. Due to the lack of a specific spatial 
+        spillover distance, first order contiguity is applied, assuming that volunteer activity
+        spills over across shared borders. Using ArcGIS Pro, neighboring municipalities are 
+        identified, and their populations engaged in volunteer work are combined to calculate 
+        a collective score. This value is then recalculated back to a percentage of individuals
+        involved in volunteer work for each municipality, considering the influence of nearby municipalities.
         - Preliminary figures. When a new year is added, the model re-estimates 
         all years in the series. Refer to the Technical Explanation for more 
         details on interpreting model estimates and margins.
@@ -252,14 +321,23 @@ Themes = {
     """,
     "Often feeling unsafe in the neighborhood": """
         **Welcome to the Often Feeling Unsafe in the Neighborhood indicator**
-        - This indicator is part of the Safety theme.
-        - Measuring unit: Percentage of the population aged 15+ that often feels unsafe.
+        - Due to the absence of specific spatial spillover literature, first order contiguity 
+        is applied, assuming that the feeling of insecurity spills over across shared municipal
+        borders. Using ArcGIS Pro, neighboring municipalities are identified, and their 
+        populations reporting insecurity are combined to calculate a collective score. 
+        This score is then recalculated back into a percentage for each municipality, 
+        considering the spillover effect from neighboring areas.
+        - Measuring unit: Percentage of the population aged 15+ that often feels unsafe in the neighborhood
     """,
     "People with one or more longterm illnesses or conditions": """
         **Welcome to the People with one or more long-term illnesses or conditions indicator**
-        - This indicator is part of the Health theme.
-        - For the years 2012 and 2016, the measured population is 19+.
-        - Measuring unit: Percentage of population aged 18 years or older
+        - This indicator is part of the Health theme. It measures the percentage of individuals
+        aged 15 and older who have one or more long-term illnesses or conditions, assuming 
+        spillover effects occur between neighboring municipalities based on shared borders. 
+        Using municipal data and spatial analysis in ArcGIS Pro, values are adjusted to account
+        for neighboring municipalities. If spillover effects suggest a greater percentage than
+        the original municipal value, the original value is retained.
+        - Measuring unit: Percentage of population aged 18 years or older with long-term illnesses or conditions
     """,
     "Quality of bathing water coastal waters": """
         **Welcome to the Quality of Swimming Water in Coastal Waters indicator**
