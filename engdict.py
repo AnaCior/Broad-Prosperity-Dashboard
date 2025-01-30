@@ -366,14 +366,14 @@ Themes = {
     """,
     "Air quality": """
         **Welcome to the Air Quality theme**
-        The sub-theme air quality includes two indicators: emissions of particulate matter to air and greenhouse gas emissions per capita.
+        - The sub-theme air quality includes two indicators: emissions of particulate matter to air and greenhouse gas emissions per capita.
         - Emissions of particulate matter to air tracks the annual average emission of fine particulate matter (less than 2.5 micrometers in diameter).
         - Greenhouse gas emissions per capita measures the total greenhouse gas emissions (in CO2 equivalents) per inhabitant, following IPCC guidelines. It includes emissions in the Netherlands, regardless of the residency of the emitter, but excludes emissions by Dutch residents abroad.
         - Data for particulate matter emissions is available for 2015 and 2019-2022, while data for greenhouse gas emissions per capita spans 2015-2021. The sub-theme is constructed for the years 2019-2021.
     """,
     "Distance to living facilities": """
         **Welcome to the Distance to Living Facilities theme**
-        The theme Distance to Living Facilities includes three indicators: Distance to Sports Field, Distance to Primary School, and Distance to Café, etc.
+        - The theme Distance to Living Facilities includes three indicators: Distance to Sports Field, Distance to Primary School, and Distance to Café, etc.
         - Distance to sports field tracks the average distance, by road, from all residents to a terrain used for sports activities (e.g., sports field, sports hall, swimming pool), with a minimum area of 0.5 hectares. 
         - Distance to primary school measures the average distance from residents to the nearest primary school, based on road distance. It includes only primary schools recognized by the Education Executive Agency (DUO). 
         - Distance to café, etc. tracks the average distance to the nearest café, coffee house, coffee shop, discotheque, sex/night club, or party center, calculated by road. 
@@ -382,7 +382,7 @@ Themes = {
     """,
     "Environment": """
         **Welcome to the Environment theme**
-       The theme Environment includes five indicators: Nature Area per Inhabitant, Emissions of Particulate Matter to Air, Nature and Forest Areas, Distance to Public Green Areas, and Greenhouse Gas Emissions per Capita.
+        - The theme Environment includes five indicators: Nature Area per Inhabitant, Emissions of Particulate Matter to Air, Nature and Forest Areas, Distance to Public Green Areas, and Greenhouse Gas Emissions per Capita.
         - Nature area per inhabitant tracks the amount of hectares of forest and open natural terrain per 1000 inhabitants. 
         - Emissions of particulate matter to air measures the annual average particulate matter emissions to air, specifically particles with a diameter of less than 2.5 micrometers. 
         - Nature and forest areas measures the percentage of total land area consisting of forest and open natural terrain. 
@@ -393,7 +393,7 @@ Themes = {
     """,
     "Health": """
         **Welcome to the Health theme**
-       The theme Health includes three indicators: Overweight, Experienced Health, and People with one or more long-term illnesses or conditions. 
+        - The theme Health includes three indicators: Overweight, Experienced Health, and People with one or more long-term illnesses or conditions. 
         - Overweight tracks the percentage of individuals aged 18 and older with a BMI of 25.0 kg/m² or higher, based on self-reported values. 
         - Experienced health measures the percentage of individuals aged 18 and older who rate their general health as 'good' or 'very good'. 
         - People with one or more long-term illnesses or conditions tracks the percentage of individuals aged 18 and older with one or more long-term illnesses or conditions, defined as lasting 6 months or more. 
@@ -402,7 +402,7 @@ Themes = {
     """,
     "Labor and free time": """
         **Welcome to the Labor and Free Time theme**
-       The theme Labour and Free Time includes four indicators: Net Labour Force Participation, Highly Educated Population, Unemployment, and Distance to Public Transportation.
+        - The theme Labour and Free Time includes four indicators: Net Labour Force Participation, Highly Educated Population, Unemployment, and Distance to Public Transportation.
         - Net labour force participation measures the share of the working population (aged 15-74) in the total population of the same age group (working and non-working). 
         - Highly educated population tracks the percentage of individuals aged 15-74 with a diploma at MBO 2, 3, or 4, HAVO, VWO, HBO, or WO level. 
         - Unemployment measures the percentage of the labour force (employed and unemployed) that is unemployed, defined as those without paid work, actively seeking employment, and available for work. 
@@ -412,7 +412,7 @@ Themes = {
     """,
     "Material welfare and economic capital": """
         **Welcome to the Material Welfare and Economic Capital theme**
-       The sub-theme material welfare and economic prosperity includes four indicators: median disposable income, average debt per household, median household wealth, and average problematic debt. 
+        - The sub-theme material welfare and economic prosperity includes four indicators: median disposable income, average debt per household, median household wealth, and average problematic debt. 
         - Median disposable income tracks the median standardized disposable income per household in euros, adjusted for household size and composition. 
         - Average debt per household measures the average debt of private households, including mortgages, study debt, consumer debt, and other liabilities, corrected for price developments. 
         - Median household wealth reflects the balance of assets and liabilities (adjusted for inflation), including bank deposits, real estate, and debts, in 2023 prices. 
@@ -421,7 +421,7 @@ Themes = {
     """,
     "Natural capital": """
         **Welcome to the Natural Capital theme**
-       The sub-theme Natural Capital includes four indicators: private solar energy, nature and forest areas, built environment, and emissions of particulate matter to air. 
+        - The sub-theme Natural Capital includes four indicators: private solar energy, nature and forest areas, built environment, and emissions of particulate matter to air. 
         - Private solar energy measures the installed capacity of solar power installations per home at the end of the reference year. 
         - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain. 
         - Built environment measures the land used for living, working, shopping, entertainment, culture, and public facilities as a percentage of total land area. 
@@ -430,7 +430,7 @@ Themes = {
  """,
     "Nature": """
         **Welcome to the Nature theme**
-        The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
+        - The sub-theme nature includes three indicators: nature area per inhabitant, nature and forest areas, and distance to public green areas.
         - Nature area per inhabitant measures the amount of hectares of forest and open natural terrain per 1000 inhabitants. Forest includes terrain planted with trees for timber production and/or nature management, while natural terrain refers to land in its natural dry or wet state.
         - Nature and forest areas tracks the percentage of total land area that consists of forest and open natural terrain.
         - Distance to public green areas calculates the average distance from residents to the nearest public green area, such as parks, gardens, or forests, measured over the road. Public green areas are at least one hectare in size and can be both privately and publicly accessible.
@@ -438,7 +438,7 @@ Themes = {
     """,
     "Society": """
         **Welcome to the Society theme**
-       The theme Society includes five indicators: Contact with Family, Friends or Neighbours, Trust in Institutions, Trust in Others, Volunteer Work, and Satisfaction with Social Life.
+        - The theme Society includes five indicators: Contact with Family, Friends or Neighbours, Trust in Institutions, Trust in Others, Volunteer Work, and Satisfaction with Social Life.
         - Contact with family, friends or neighbours tracks the percentage of people aged 15 and over who have contact with family, friends, or neighbours at least once a week on average. It averages three indicators: weekly contact with family, friends, and neighbours. 
         - Trust in institutions measures the percentage of people aged 15 and over who have confidence in three institutions: the House of Representatives, the police, and judges. The score is the average of the three. 
         - Trust in others tracks the percentage of people aged 15 and over who agree that most people can generally be trusted (generalized trust). 
@@ -449,7 +449,7 @@ Themes = {
     """,
     "Well-being": """
         **Welcome to the Well-being theme**
-        The sub-theme well-being includes two indicators: satisfaction with free time and satisfaction with life.
+        - The sub-theme well-being includes two indicators: satisfaction with free time and satisfaction with life.
         - Satisfaction with free time measures the percentage of individuals aged 18 and older who give a score between 7 and 10 on their satisfaction with the amount of free time they have, based on a scale from 1 to 10. 
         - Satisfaction with life measures the percentage of individuals aged 18 and older who give a score between 7 and 10 on their overall life satisfaction, based on the same scale. 
         - Data for both indicators spans the years 2013-2023, and both indicators have been fully incorporated into the well-being score for the theme.
