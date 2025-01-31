@@ -169,11 +169,43 @@ with col[1]:
 
     st.write('''- Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
     
+    df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
+    selected_year = str(selected_year)  # Convert selected year to string
+
+    df_selectedindicator = df_indicators[
+        (df_indicators['Label'] == selected_indicator)&
+        (df_indicators['jaar'] == selected_year)]
+
+    df_selectedindicator_sorted = df_selectedindicator.sort_values(by='waarde', ascending=False)
+    
+    columns_to_include = ['Gemeentenaam', 'waarde'] 
+    
+    df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
+    with st.expander(f'*Municipalities ranked from high to low inb{selected_indicator}*'):
+
+        if df_selectedindicator_sorted.empty:
+                st.warning("No data available for the selected indicator.")
+        else:
+            # Display the DataFrame using Streamlit
+            st.dataframe(
+            df_selectedindicator_sorted, 
+            column_order=("Gemeentenaam", "waarde"), 
+            hide_index=True, 
+            width=None, 
+            column_config={
+                "Gemeentenaam": st.column_config.TextColumn(
+                    "Municipality",
+                ),
+                "waarde": st.column_config.TextColumn(
+                    "Values",  # This will now display as plain numbers
+                ),
+            }
+        )
     # Links to the Dutch page and download page
     st.markdown("""
     <div style='text-align: left; padding: 10px; display: flex; align-items: center;'>
         <h1 style='color: #e5007d; font-size: 20px; font-weight: bold; margin-top: 0; margin-right: 8px;'>For the Dutch page:</h1>
-        <a href="https://cmostamm-dutch.streamlit.app/" target="_blank" style="
+        <a href="https://bp-dashboard-dutch.streamlit.app/" target="_blank" style="
             text-decoration: none;
             background-color: #e5007d;
             color: white;
@@ -189,7 +221,7 @@ with col[1]:
     st.markdown("""
     <div style='text-align: left; padding: 10px; display: flex; align-items: center;'>
         <h1 style='color: #e5007d; font-size: 20px; font-weight: bold; margin-top: 0; margin-right: 8px;'>For the download page:</h1>
-        <a href="https://cmostamm-dutch.streamlit.app/~/+/" target="_blank" style="
+        <a href="https://mapdownload.streamlit.app/" target="_blank" style="
             text-decoration: none;
             background-color: #e5007d;
             color: white;
