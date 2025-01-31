@@ -200,7 +200,7 @@ with col[1]:
                     "Values",  # This will now display as plain numbers
                 ),
             }
-        )
+        )
     # Links to the Dutch page and download page
     st.markdown("""
     <div style='text-align: left; padding: 10px; display: flex; align-items: center;'>
