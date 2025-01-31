@@ -199,7 +199,7 @@ with col[1]:
                 "waarde": st.column_config.TextColumn(
                     "Values",  # This will now display as plain numbers
                 ),
-            }
+            }
         )
     # Links to the Dutch page and download page
     st.markdown("""
