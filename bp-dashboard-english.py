@@ -168,6 +168,8 @@ with col[1]:
     """)
 
     st.write('''- Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
+
+    df_indicators = pd.read_csv("small_merged.csv", engine="openpyxl")
     
     df_indicators['jaar'] = df_indicators['jaar'].astype(str)  # Convert to string
     selected_year = str(selected_year)  # Convert selected year to string
