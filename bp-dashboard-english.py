@@ -183,7 +183,7 @@ with col[1]:
     columns_to_include = ['Gemeentenaam', 'waarde'] 
     
     df_selectedindicator_sorted = df_selectedindicator_sorted[columns_to_include]
-    with st.expander(f'*Municipalities ranked from high to low inb{selected_indicator}*'):
+    with st.expander(f'*Municipalities ranked from high to low in {selected_indicator}*'):
 
         if df_selectedindicator_sorted.empty:
                 st.warning("No data available for the selected indicator.")
