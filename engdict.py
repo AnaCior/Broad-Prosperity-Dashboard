@@ -455,3 +455,42 @@ Themes = {
         - Data for both indicators spans the years 2013-2023, and both indicators have been fully incorporated into the well-being score for the theme.
     """,
 }
+
+Sources = {
+    "Population with a starting qualification": """ 
+    - Source for spillover calculation: https://www.sciencedirect.com/science/article/pii/S0166046222000163 
+    """,
+    "Unemployment": """
+    - Source for spillover calculation: https://www.sciencedirect.com/science/article/pii/S0166046222000163 
+    """,
+    "Distance to public transport": """ 
+    - Source for spillover calculation: https://www.researchgate.net/figure/Reported-values-for-willingness-to-walk-to-public-transport-in-meters-and-for-the_tbl1_358628261 
+    """,
+    "Distance to sports field": """ 
+    - Source for spillover calculation: https://www.sciencedirect.com/science/article/abs/pii/S1353829219304861?via%3Dihub
+    """,
+    "Distance to primary school": """ 
+    - Source for spillover calculation: https://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-5-1
+    """,
+    "Distance to café etc.": """
+    - Source for spillover calculation: https://www.cdc.gov/pcd/issues/2015/15_0065.htm#:~:text=The%20median%20distance%20to%20sit,0.4%20miles%20to%20grocery%2Fsupermarkets.
+    """,
+    "Trust in institutions": """
+    - Source for spillover calculation: https://ifh.wiwi.uni-goettingen.de/site/assets/files/8720/ifh_wp-41_2023.pdf
+    """,
+    "Trust in others": """ 
+    - Source for spillover calculation: https://ifh.wiwi.uni-goettingen.de/site/assets/files/8720/ifh_wp-41_2023.pdf
+    """,
+    "Distance to public green space": """ 
+    - Source for spillover calculation: https://pdf.sciencedirectassets.com/271856/1-s2.0-S0143622821X00161/1-s2.0-S0143622822000443/main.pdf
+    """,
+    "Nature and forest areas": """ 
+    - Source for spillover calculation: https://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-5-1
+    """,
+    "Private solar energy": """
+    - Source for spillover calculation: https://www.cdc.gov/pcd/issues/2015/15_0065.htm#:~:text=The%20median%20distance%20to%20sit,0.4%20miles%20to%20grocery%2Fsupermarkets.
+    """,
+    "Emissions of particulate matter to air": """ 
+    - Source for spillover calculation: https://www.rivm.nl/ggd-richtlijn-medische-milieukunde-luchtkwaliteit-en-gezondheid/gezondheidseffecten-luchtverontreiniging/luchtkwaliteit-invloed-drukke-wegen
+    """,
+}
