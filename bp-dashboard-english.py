@@ -167,7 +167,7 @@ with col[1]:
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
 
-    with st.expander('Ongeveer', expanded=True):
+    with st.expander('Sources', expanded=True):
         st.write('''
             - Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
         if selected_indicator in Sources:
