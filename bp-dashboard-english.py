@@ -6,7 +6,7 @@ import folium
 import json
 import pydeck as pdk 
 from path_en import indicator_options, theme_options, color_schemes
-from engdict import Themes
+from engdict import Themes, Sources
 
 # Page configuration: Sets title, layout, and sidebar state
 st.set_page_config(
@@ -167,7 +167,15 @@ with col[1]:
     broad prosperity in the North through research, strategy, and raising awareness.
     """)
 
-    st.write('''- Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
+    with st.expander('Ongeveer', expanded=True):
+        st.write('''
+            - Data: [CBS data: Nederland (https://www.cbs.nl/nl-nl/visualisaties/regionale-monitor-brede-welvaart/indicator)]''')
+        if selected_indicator in Sources:
+            st.write(Sources[selected_indicator])
+        else:
+            st.write("")  # Blank output
+
+    st.write('''  Municipalities ranked from high to low are only available for indicators, not for themes.  ''')
 
     df_indicators = pd.read_csv("small_mergedEN.csv")
     
