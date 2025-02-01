@@ -175,7 +175,9 @@ with col[1]:
         else:
             st.write("")  # Blank output
 
-    st.write('''  Municipalities ranked from high to low are only available for indicators, not for themes.  ''')
+    st.write('''  Municipalities ranked from high to low are only available for indicators, not for themes. 
+        **Disclaimer:** This ranking is based solely on numerical values from highest to lowest and does not indicate the relative well-being or superiority of any municipality.
+    ''')
 
     df_indicators = pd.read_csv("small_mergedEN.csv")
     
